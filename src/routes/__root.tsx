@@ -73,17 +73,34 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Lovable App" },
-      { name: "description", content: "Your Enterprise Level Self-host AI Agents in under 10 minutes." },
+      {
+        name: "description",
+        content: "Your Enterprise Level Self-host AI Agents in under 10 minutes.",
+      },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Your Enterprise Level Self-host AI Agents in under 10 minutes." },
+      {
+        property: "og:description",
+        content: "Your Enterprise Level Self-host AI Agents in under 10 minutes.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Your Enterprise Level Self-host AI Agents in under 10 minutes." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f51f1fc7-fe97-43e4-b66f-95f865a43de8/id-preview-d0bbe38f--29d40f92-dde8-4c10-9eab-79841d681e72.lovable.app-1778667187507.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f51f1fc7-fe97-43e4-b66f-95f865a43de8/id-preview-d0bbe38f--29d40f92-dde8-4c10-9eab-79841d681e72.lovable.app-1778667187507.png" },
+      {
+        name: "twitter:description",
+        content: "Your Enterprise Level Self-host AI Agents in under 10 minutes.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f51f1fc7-fe97-43e4-b66f-95f865a43de8/id-preview-d0bbe38f--29d40f92-dde8-4c10-9eab-79841d681e72.lovable.app-1778667187507.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f51f1fc7-fe97-43e4-b66f-95f865a43de8/id-preview-d0bbe38f--29d40f92-dde8-4c10-9eab-79841d681e72.lovable.app-1778667187507.png",
+      },
     ],
     links: [
       {
@@ -98,6 +115,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
+const OPENCALF_WIDGET_CONFIG_SCRIPT =
+  'window.OpenCalfConfig = {"agentId":"6469696b-0802-4e11-9374-02a1d6d2f072","apiBase":"https://api.achain.site/api/v1","primaryColor":"#2563eb","title":"OpenCalf Support","layout":"side-panel","panelSide":"right","voiceEnabled":false,"showVoiceButton":true,"textChatEnabled":true,"avatarInitial":"O","sttBackend":"web_builtin","ttsBackend":"web_builtin","primaryLanguage":"en","launcherMode":"fab"};';
+
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -107,6 +127,8 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <script dangerouslySetInnerHTML={{ __html: OPENCALF_WIDGET_CONFIG_SCRIPT }} />
+        <script defer src="https://api.achain.site/widget/opencalf.js" />
       </body>
     </html>
   );

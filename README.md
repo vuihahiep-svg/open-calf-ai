@@ -12,7 +12,7 @@ cp public/showcase/*.png ../docs/readme-showcase/
 
 Root [`README.md`](../README.md) mục **Try OpenCalf** dùng `docs/readme-showcase/*.png`.
 
-| File | Dùng trên landing |
+| File | Dùng trên landin.g |
 |------|-------------------|
 | `nhaxeutchi-landing.png` | Card **Nhà xe demo** → [nhaxeutchi.vercel.app](https://nhaxeutchi.vercel.app/) |
 | `aithucchien-widget-open.png` | Card **AI Thực Chiến** (widget mở) → [aithucchien-iota.vercel.app](https://aithucchien-iota.vercel.app/) |

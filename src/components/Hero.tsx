@@ -51,7 +51,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
-              href="#"
+              href="https://opencalf.achain.site"
               className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-all hover:opacity-90 glow-accent"
             >
               Get started

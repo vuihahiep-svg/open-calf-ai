@@ -33,7 +33,7 @@ export function Navbar() {
             <span>GitHub</span>
           </a>
           <a
-            href="#"
+            href="https://opencalf.achain.site"
             className="inline-flex h-9 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             Get started

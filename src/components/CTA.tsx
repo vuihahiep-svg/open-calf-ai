@@ -14,13 +14,17 @@ export function CTA() {
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a
             href="https://opencalf.achain.site"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 glow-accent"
           >
             Get started
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
-            href="#"
+            href="https://github.com/a20-ai-thuc-chien/A20-App-097"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-11 items-center gap-2 rounded-md border border-border bg-surface px-5 text-sm font-medium text-foreground transition-colors hover:bg-surface-elevated"
           >
             <Github className="h-4 w-4" />

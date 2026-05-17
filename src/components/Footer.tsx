@@ -11,9 +11,30 @@ export function Footer() {
           </span>
         </div>
         <div className="flex items-center gap-6 font-mono text-xs text-muted-foreground">
-          <a href="#" className="transition-colors hover:text-foreground">GitHub</a>
-          <a href="#" className="transition-colors hover:text-foreground">Docs</a>
-          <a href="#" className="transition-colors hover:text-foreground">Changelog</a>
+          <a
+            href="https://github.com/a20-ai-thuc-chien/A20-App-097"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://opencalf.achain.site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            Docs
+          </a>
+          <a
+            href="https://github.com/a20-ai-thuc-chien/A20-App-097/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            Changelog
+          </a>
         </div>
       </div>
     </footer>

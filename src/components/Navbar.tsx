@@ -14,19 +14,32 @@ export function Navbar() {
           </span>
         </a>
         <div className="hidden items-center gap-8 md:flex">
-          <a href="#features" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+          <a
+            href="#features"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
             Features
           </a>
-          <a href="#self-host" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+          <a
+            href="#self-host"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
             Self-host
           </a>
-          <a href="#" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+          <a
+            href="https://opencalf.achain.site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
             Docs
           </a>
         </div>
         <div className="flex items-center gap-2">
           <a
-            href="#"
+            href="https://github.com/a20-ai-thuc-chien/A20-App-097"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden h-9 items-center gap-2 rounded-md border border-border bg-surface px-3 text-sm text-foreground transition-colors hover:bg-surface-elevated sm:inline-flex"
           >
             <Github className="h-4 w-4" />
@@ -34,6 +47,8 @@ export function Navbar() {
           </a>
           <a
             href="https://opencalf.achain.site"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-9 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             Get started
